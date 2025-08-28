@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE TAMVANS BASKETBALL CLUB - Official Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-green-500">
+    <!-- Musik Otomatis -->
+    <audio autoplay src="#"></audio>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-1">
+                        <!-- Tambahkan logo gambar di sini -->
+                        <img src="img/LOGO.png" alt="Logo Tamvan's Basketball Club" class="h-10 w-10 object-cover">
+                        <span class="text-base sm:text-lg md:text-1xl font-bold bg-gradient-to-r from-green-800 via-green-600 to-green-800 bg-clip-text text-transparent"> THE TAMVANS BASKETBALL CLUB</span>
+                    </div>
+                </div>
+                <!-- Navbar menu di kanan -->
+                <div class="hidden lg:block">
+                    <div class="flex space-x-2">
+                        <a href="#home" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Beranda</a>
+                        <a href="#about" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Tentang Kami</a>
+                        <a href="#achievements" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Prestasi</a>
+                        <a href="#gallery" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Galeri</a>
+                        <a href="#merch" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Jersey</a>
+                        <!-- CTA Instagram & YouTube di navbar -->
+                <a href="https://instagram.com/thetamvansbasketball" target="_blank" class="ml-4 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                    <i class="fab fa-instagram text-white text-lg"></i>
+                </a>
+                <a href="https://www.youtube.com/@thetamvanschannel" target="_blank" class="ml-2 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                    <i class="fab fa-youtube text-white text-lg"></i>
+                </a>
+                    </div>
+                </div>
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-gray-700 hover:text-green-600">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-green-600">Beranda</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-green-600">Tentang Kami</a>
+                <a href="#achievements" class="block px-3 py-2 text-gray-700 hover:text-green-600">Prestasi</a>
+                <a href="#gallery" class="block px-3 py-2 text-gray-700 hover:text-green-600">Galeri</a>
+                <a href="#merch" class="block px-3 py-2 text-gray-700 hover:text-green-600">Jersey</a>
+                <a href="https://instagram.com/thetamvansbasketball" target="_blank" class="block px-3 py-2 text-gray-700 hover:text-green-600">Instagram</a>
+                <a href="https://www.youtube.com/@thetamvanschannel" target="_blank" class="block px-3 py-2 text-gray-700 hover:text-green-600">YouTube</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-center pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in">
+                <h1 class="text-2xl md:text-4xl font-bold mt-6 mb-6 text-slate-800">
+                    THE TAMVANS BASKETBALL CLUB
+                </h1>
+                <!-- <p class="text-xl md:text-2xl text-gray-100 mb-8">Bersatu dalam permainan, berprestasi dengan sportivitas.</p> -->
+            </div>
+            <div class="mt-16 floating">
+                <img src="img/LOGO.png" alt="Logo The Tamvan's" class="mx-auto rounded-xl shadow-2xl w-25 h-25 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="slide-in">
+                    <div class="text-3xl md:text-4xl font-bold text-green-600">15+</div>
+                    <div class="text-gray-600">Pemain Aktif</div>
+                </div>
+                <div class="slide-in" style="animation-delay: 0.2s;">
+                    <div class="text-3xl md:text-4xl font-bold text-green-600">8</div>
+                    <div class="text-gray-600">Kejuaraan</div>
+                </div>
+                <div class="slide-in" style="animation-delay: 0.4s;">
+                    <div class="text-3xl md:text-4xl font-bold text-green-600">25+</div>
+                    <div class="text-gray-600">Pertandingan</div>
+                </div>
+                <div class="slide-in" style="animation-delay: 0.6s;">
+                    <div class="text-3xl md:text-4xl font-bold text-green-600">5</div>
+                    <div class="text-gray-600">Tahun Berdiri</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-green-800 via-green-600 to-green-800 bg-clip-text text-transparent mb-12">TENTANG KAMI</h2
+            >
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <div class="relative overflow-hidden rounded-xl shadow-lg">
+                        <img src="img/LOGO.png" alt="Logo The Tamvan's" class="w-full h-100 object-cover transform hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+                
+                <div class="fade-in">
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-green-800 via-green-600 to-green-400 bg-clip-text text-transparent mb-6">Sejarah & Visi Kami</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        The Tamvans Basket Club didirikan pada tahun 2019 dengan misi untuk menciptakan tim basket profesional 
+                        yang tidak hanya berfokus pada kemenangan, tetapi juga pada pembangunan karakter dan pengembangan 
+                        bakat muda di Palembang. Dalam 5 tahun terakhir, kami telah berkembang menjadi salah satu tim basket 
+                        terkemuka di Palembang.
+                    </p>
+                    
+                    <h3 class="text-2xl font-bold bg-gradient-to-r from-green-800 via-green-600 to-green-400 bg-clip-text text-transparent mb-4">Misi Kami</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Mendorong perkembangan olahraga basket melalui program pelatihan berkualitas tinggi, 
+                        kompetisi yang sehat, dan pembinaan pemain berkarakter. Kami berkomitmen untuk menciptakan 
+                        lingkungan yang mendukung pertumbuhan secara holistik.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl text-green-600">
+                                    <i class="fa-solid fa-basketball"></i>
+                                </span>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">Professionalisme</h4>
+                            <p class="text-sm text-gray-600">Standar tertinggi dalam setiap aspek</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl text-green-600">
+                                    <i class="fa-solid fa-users"></i>
+                                </span>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">Teamwork</h4>
+                            <p class="text-sm text-gray-600">Kolaborasi untuk mencapai tujuan bersama</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl text-green-600">
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">Excellence</h4>
+                            <p class="text-sm text-gray-600">Selalu berusaha menjadi yang terbaik</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <span class="text-2xl text-green-600">
+                                    <i class="fa-solid fa-seedling"></i>
+                                </span>
+                            </div>
+                            <h4 class="font-semibold text-gray-800">Development</h4>
+                            <p class="text-sm text-gray-600">Pengembangan bakat berkelanjutan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Achievements Section -->
+     
+    <section id="achievements" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-green-800 via-green-600 to-green-800 bg-clip-text text-transparent mb-12">PRESTASI KAMI</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <!-- Trophy Icon Font Awesome -->
+                    <div class="mb-4 flex justify-center">
+                        <span class="text-yellow-500 text-4xl">
+                            <i class="fa-solid fa-trophy"></i>
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800">Juara Nasional 2023</h3>
+                    <p class="text-gray-600 text-center mt-2">Memenangkan kejuaraan nasional dengan rekor menang 12-2.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <!-- Silver Medal Icon Font Awesome -->
+                    <div class="mb-4 flex justify-center">
+                        <span class="text-gray-400 text-4xl">
+                            <i class="fa-solid fa-medal"></i>
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800">Runner-up Regional 2022</h3>
+                    <p class="text-gray-600 text-center mt-2">Peringkat kedua di kejuaraan regional dengan performa solid.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover">
+                    <!-- Bronze Medal Icon Font Awesome -->
+                    <div class="mb-4 flex justify-center">
+                        <span class="text-yellow-800 text-4xl">
+                            <i class="fa-solid fa-award"></i>
+                        </span>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-800">Third Place International 2021</h3>
+                    <p class="text-gray-600 text-center mt-2">Mewakili negara di kompetisi internasional dan meraih peringkat ketiga.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-green-800 via-green-600 to-green-800 bg-clip-text text-transparent mb-12">GALERI TIM</h2>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="relative group overflow-hidden rounded-xl">
+                    <img src="/img/LOGO.png" alt="Champions" class="w-full h-50 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-semibold">Championship Moment</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl">
+                    <img src="/img/LOGO.png" alt="Champions" class="w-full h-50 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-semibold">Championship Moment</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl">
+                    <img src="/img/LOGO.png" alt="Champions" class="w-full h-50 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-semibold">Championship Moment</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-xl">
+                    <img src="/img/LOGO.png" alt="Champions" class="w-full h-50 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-semibold">Championship Moment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jersey Section -->
+    <section id="merch" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-green-800 via-green-600 to-green-800 bg-clip-text text-transparent mb-12">JERSEY KAMI</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Jersey -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <img src="/img/LOGO.png" alt="Jersey Terang The Tamvan's" class="w-full h-50 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-center text-gray-800">Jersey Terang 2024</h3>
+                        <p class="text-green-600 text-center font-semibold">Rp 299.000</p>
+                        <div class="mt-4 flex flex-col gap-2">
+                            <a href="https://wa.me/6281234567890?text=Halo%20EliteBasket,%20saya%20ingin%20pesan%20Jersey%20Tim%202024" target="_blank" class="w-full flex items-center justify-center bg-green-500 text-white py-2 rounded-lg hover:bg-green-600 transition-colors font-semibold">Pesan via WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-green-800 via-green-600 to-green-800 bg-clip-text text-transparent text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">The Tamvans Basketball Club</h4>
+                    <p class="text-white-600">Bersatu dalam permainan, berprestasi dengan sportivitas.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-gray-800 mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-white-400 hover:text-white">Beranda</a></li>
+                        <li><a href="#about" class="text-white-400 hover:text-white">Tentang Kami</a></li>
+                        <li><a href="#achievements" class="text-white-400 hover:text-white">Prestasi</a></li>
+                        <li><a href="#gallery" class="text-white-400 hover:text-white">Galeri</a></li>
+                        <li><a href="#merch" class="text-white-400 hover:text-white">Jersey</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- CTA Instagram & YouTube -->
+            <div class="flex justify-left gap-3 mt-8">
+                <a href="https://instagram.com/thetamvansbasketball" target="_blank" class="w-10 h-10 bg-green-900 rounded-full flex items-center justify-center hover:bg-gray-400 transition-colors">
+                    <i class="fab fa-instagram text-white text-xl"></i>
+                </a>
+                <a href="https://www.youtube.com/@thetamvanschannel" target="_blank" class="w-10 h-10 bg-green-900 rounded-full flex items-center justify-center hover:bg-gray-400 transition-colors">
+                    <i class="fab fa-youtube text-white text-xl"></i>
+                </a>
+            </div>
+
+            <div class="border-t border-white-700 mt-8 pt-8 text-center">
+                <p class="text-gray-900">© 2024 The Tamvans Basketball Club. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.slide-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Parallax effect
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.parallax');
+            parallaxElements.forEach(element => {
+                const speed = 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Product hover effect
+        const products = document.querySelectorAll('.card-hover');
+        products.forEach(product => {
+            product.addEventListener('mouseenter', () => {
+                product.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            product.addEventListener('mouseleave', () => {
+                product.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
